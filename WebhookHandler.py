@@ -4,8 +4,8 @@ api = FastAPI()
 
 @api.post("/webhook/bitbucket")
 async def bitbucket(request):
-    print(request)
+    print("Got request from bitbucket: {}".format(request))
 
 @api.post("/webhook/teams")
 async def teams(request):
-    print(request)
+    print("Got request from teams: {}".format(request))
