@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 api = FastAPI()
+print("Sadness")
 
 @api.post("/webhook/bitbucket")
 async def bitbucket(request):
